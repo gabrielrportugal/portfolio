@@ -1,19 +1,15 @@
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 import { ContactList } from '../contact-list';
 
-export const Footer = () => {
-  const bg = useColorModeValue('seconday.50', 'secondary.900');
- 
+export const Footer = () => { 
   return (
     <Box 
       as="footer" 
-      display="flex" 
-      w="100%" 
+      display="flex"  
       justifyContent="center"
       alignItems="center"
       height={[12, 16, 20]}
-      bg={bg}
       gap="4"
     >
       <ContactList />

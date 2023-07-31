@@ -11,18 +11,21 @@ import { headerMenuItens } from '@/utils';
 export const Header = () => {
   const { onOpen } = useSidebarDrawer();
 
-  const bg = useColorModeValue('seconday.50', 'secondary.900');
+  const bg = useColorModeValue('white.50', 'black.50');
+
   const titleColor = useColorModeValue('primary.500', 'primary.50');
 
   const isDesktopVersion = useBreakpointValue({ base: false, lg: true }); 
 
   return (
     <Box 
-      as="header" 
+      as="header"
       display="flex" 
       w="100%" 
-      justifyContent="center"
       bg={bg}
+      justifyContent="center"
+      height="6rem"
+      position="fixed"
     >
       <Box
         display="flex" 
@@ -30,8 +33,7 @@ export const Header = () => {
         alignItems="center"
         w="100%"
         maxWidth="7xl"
-        height="6rem"
-        margin={["0 1.5rem", "0 5rem"]}
+        margin={["0 2rem", "0 4rem", "0 6rem",  "0 auto"]}
       >
         <Link href="/" color={titleColor} _hover={{ opacity: 0.8 }}>
           <Icon 

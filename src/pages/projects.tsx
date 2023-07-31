@@ -1,6 +1,6 @@
 import { Box, Heading } from "@chakra-ui/react";
 
-export default function About() {
+export default function Projects() {
   return (
     <Box>
       <Heading as="h1" mb="2">

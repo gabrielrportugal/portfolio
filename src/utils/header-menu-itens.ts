@@ -11,5 +11,9 @@ export const headerMenuItens: IHeaderMenuItem[] = [
   {
     title: 'Blog',
     href: '/blog',
+  },
+  {
+    title: 'Projetos',
+    href: '/projects',
   }
 ]

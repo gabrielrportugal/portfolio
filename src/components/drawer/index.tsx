@@ -8,11 +8,13 @@ import { ContactList } from "../contact-list";
 export const Drawer = () => {
   const { isOpen, onClose } = useSidebarDrawer();
   const titleColor = useColorModeValue('primary.500', 'primary.50');
+
+  const bg = useColorModeValue('white.50', 'black.50');
   
   return (
     <DrawerComp placement='left' onClose={onClose} isOpen={isOpen}>
       <DrawerOverlay />
-      <DrawerContent>
+      <DrawerContent backgroundColor={bg}>
         <DrawerHeader 
           display="flex"
           alignItems="center"

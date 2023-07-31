@@ -13,16 +13,13 @@ import {
 
 
 export const ContactList = () => {
-  const bg = useColorModeValue('seconday.50', 'secondary.900');
   const titleColor = useColorModeValue('primary.500', 'primary.50');
  
   return (
     <Box 
       display="flex" 
-      w="100%" 
       justifyContent="center"
       alignItems="center"
-      bg={bg}
       gap="4"
     >
         <Link href="https://twitter.com/gabriel_ptbr" color={titleColor} _hover={{ opacity: 0.8 }}>
