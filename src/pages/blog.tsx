@@ -4,7 +4,7 @@ export default function Blog() {
   return (
     <Box>
       <Heading as="h1" mb="2">
-        Still working on that.
+        Ainda estamos trabalhando nisto !
       </Heading>
     </Box>
   )
