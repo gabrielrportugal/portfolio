@@ -9,7 +9,7 @@ export const Footer = () => {
       display="flex"  
       justifyContent="center"
       alignItems="center"
-      height={[12, 16, 20]}
+      height={[18, 20, 26]}
       gap="4"
     >
       <ContactList />

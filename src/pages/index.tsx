@@ -1,5 +1,3 @@
-
-import { ContactList } from '@/components/contact-list'
 import { ProjectItem } from '@/components/project-item';
 import { GithubRepository } from '@/interfaces';
 import { api } from '@/services';
