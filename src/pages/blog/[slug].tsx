@@ -1,6 +1,6 @@
-import { getPostBySlug } from "@/lib/get-posts";
+import { getPostBySlug, getPostSlugs } from "@/lib/get-posts";
 import { Box, Heading } from "@chakra-ui/react";
-import { GetStaticProps } from "next";
+import { GetStaticPathsResult, GetStaticProps } from "next";
 
 interface BlogDetailsProps {
   title: string;
@@ -29,6 +29,22 @@ function BlogDetails({
     </Box>
   )
 }
+
+export const getStaticPaths = (): GetStaticPathsResult => {
+  const posts = getPostSlugs();
+  const paths = posts.map((postSlug: string) => {
+    return {
+      params: {
+        slug: postSlug.replace(".md", ""),
+      },
+    };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
 
 export const getStaticProps: GetStaticProps = ({
   params,
