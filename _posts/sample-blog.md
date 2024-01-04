@@ -2,8 +2,9 @@
 title: "My Sample blog"
 description: "This is the description for the blog"
 banner: "/images/sample-blog.jpeg"
-tags: ["NextJS"]
+tags: ["NextJS", "React"]
 date: 1 January 2022
+ready: false
 ---
 
 # How to make this blog yours
@@ -25,7 +26,7 @@ NEXT_PUBLIC_MEDIUM_PROFILE_URL = "";
 NEXT_PUBLIC_STACKOVERFLOW_PROFILE_URL = "";
 NEXT_PUBLIC_TWITTER_PROFILE_URL = "";
 NEXT_PUBLIC_TWITTER_HANDLE = "";
-NEXT_PUBLIC_OWNER_NAME = "Mohammad Faisal";
+NEXT_PUBLIC_OWNER_NAME = "Gabriel Portugal";
 NEXT_PUBLIC_GOOGLE_ANALYTICS_KEY = "";
 ```
 
@@ -104,8 +105,4 @@ To read more about how the different parts were built refer to these articles.
 
 ### Github Repo
 
-https://github.com/Mohammad-Faisal/nextjs-tailwindcss-beautiful-blog-template
-
-### Demo:
-
-https://nextjs-tailwindcss-beautiful-blog-template-6bhlgxk4v.vercel.app/sample-blog
+https://github.com/gabrielrportugal/portfolio

@@ -26,6 +26,8 @@ export const Header = () => {
       justifyContent="center"
       height="6rem"
       position="fixed"
+      boxShadow='sm'
+      zIndex={3}
     >
       <Box
         display="flex" 

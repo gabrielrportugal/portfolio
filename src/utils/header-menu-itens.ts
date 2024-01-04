@@ -5,6 +5,10 @@ interface IHeaderMenuItem {
 
 export const headerMenuItens: IHeaderMenuItem[] = [
   {
+    title: 'Home',
+    href: '/',
+  },
+  {
     title: 'Sobre',
     href: '/about',
   },

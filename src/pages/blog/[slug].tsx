@@ -32,6 +32,7 @@ function BlogDetails({
 
 export const getStaticPaths = (): GetStaticPathsResult => {
   const posts = getPostSlugs();
+
   const paths = posts.map((postSlug: string) => {
     return {
       params: {
@@ -39,6 +40,7 @@ export const getStaticPaths = (): GetStaticPathsResult => {
       },
     };
   });
+  
   return {
     paths,
     fallback: false,

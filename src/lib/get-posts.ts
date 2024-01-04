@@ -25,7 +25,7 @@ export function getAllPosts() {
     .map((slug) => getPostBySlug(slug))
     .sort((post1, post2) =>
       new Date(post1.data.date) > new Date(post2.data.date) ? -1 : 1
-    );
+    ).filter(post => post.data.ready);
 
   return posts;
 }

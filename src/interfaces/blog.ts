@@ -5,6 +5,7 @@ export interface BlogMetaData {
   date: string;
   banner: string;
   tags: string[];
+  ready: boolean;
 }
 
 export interface BlogDetails {
