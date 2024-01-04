@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useDisclosure, UseDisclosureReturn } from '@chakra-ui/react';
 import { useRouter } from 'next/dist/client/router';
 import { createContext, useContext, useEffect } from 'react';

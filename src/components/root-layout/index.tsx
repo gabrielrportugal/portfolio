@@ -18,7 +18,7 @@ export default function RootLayout({ children }:RootLayoutProps) {
       <Header />
       <Box 
         as="main" 
-        paddingTop="6rem"
+        paddingTop="8rem"
         w="100%" 
       >
         <Box

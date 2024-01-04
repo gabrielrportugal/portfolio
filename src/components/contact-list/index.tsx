@@ -22,7 +22,12 @@ export const ContactList = () => {
       alignItems="center"
       gap="4"
     >
-        <Link href="https://twitter.com/gabriel_ptbr" color={titleColor} _hover={{ opacity: 0.8 }}>
+        <Link 
+          href="https://twitter.com/gabriel_ptbr" 
+          color={titleColor} 
+          _hover={{ opacity: 0.8 }}
+          target='_blank'
+        >
           <Icon 
             as={FaSquareTwitter} 
             color={titleColor}
@@ -30,7 +35,12 @@ export const ContactList = () => {
           />
         </Link>
 
-        <Link href="https://github.com/gabrielrportugal" color={titleColor} _hover={{ opacity: 0.8 }}>
+        <Link 
+          href="https://github.com/gabrielrportugal" 
+          color={titleColor} 
+          _hover={{ opacity: 0.8 }}
+          target='_blank'
+        >
           <Icon 
             as={FaGithubSquare} 
             color={titleColor}
@@ -38,7 +48,12 @@ export const ContactList = () => {
           />
         </Link>
 
-        <Link href="https://www.youtube.com/channel/UCYUWumvbdmcJnSvufHUql_A" color={titleColor} _hover={{ opacity: 0.8 }}>
+        <Link 
+          href="https://www.youtube.com/channel/UCYUWumvbdmcJnSvufHUql_A" 
+          color={titleColor} 
+          _hover={{ opacity: 0.8 }}
+          target='_blank'
+        >
           <Icon 
             as={FaYoutubeSquare} 
             color={titleColor}
@@ -46,7 +61,12 @@ export const ContactList = () => {
           />
         </Link>
 
-        <Link href="https://www.linkedin.com/in/gabrielrportugal" color={titleColor} _hover={{ opacity: 0.8 }}>
+        <Link 
+          href="https://www.linkedin.com/in/gabrielrportugal" 
+          color={titleColor} 
+          _hover={{ opacity: 0.8 }}
+          target='_blank'
+        >
           <Icon 
             as={FaLinkedin} 
             color={titleColor}
