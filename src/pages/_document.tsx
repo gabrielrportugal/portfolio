@@ -7,7 +7,9 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head />
       <body>
-        <ColorModeScript initialColorMode={chakraTheme.config.initialColorMode} />
+        <ColorModeScript
+          initialColorMode={chakraTheme.config.initialColorMode}
+        />
         <Main />
         <NextScript />
       </body>

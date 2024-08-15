@@ -1,15 +1,16 @@
-import { getPostBySlug, getPostSlugs } from "@/lib/get-posts";
-import { Box, Heading } from "@chakra-ui/react";
-import { GetStaticPathsResult, GetStaticProps } from "next";
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { getPostBySlug, getPostSlugs } from '@/lib/get-posts'
+import { Box, Heading } from '@chakra-ui/react'
+import { GetStaticPathsResult, GetStaticProps } from 'next'
 
 interface BlogDetailsProps {
-  title: string;
-  date: string;
-  content: string;
-  description: string;
-  slug: string;
-  tags: string[];
-  banner: string;
+  title: string
+  date: string
+  content: string
+  description: string
+  slug: string
+  tags: string[]
+  banner: string
 }
 
 function BlogDetails({
@@ -31,28 +32,25 @@ function BlogDetails({
 }
 
 export const getStaticPaths = (): GetStaticPathsResult => {
-  const posts = getPostSlugs();
+  const posts = getPostSlugs()
 
   const paths = posts.map((postSlug: string) => {
     return {
       params: {
-        slug: postSlug.replace(".md", ""),
+        slug: postSlug.replace('.md', ''),
       },
-    };
-  });
-  
+    }
+  })
+
   return {
     paths,
     fallback: false,
-  };
-};
+  }
+}
 
-
-export const getStaticProps: GetStaticProps = ({
-  params,
-}) => {
-  const slug = params?.slug ?? "";
-  const postDetails = getPostBySlug(slug.toString());
+export const getStaticProps: GetStaticProps = ({ params }) => {
+  const slug = params?.slug ?? ''
+  const postDetails = getPostBySlug(slug.toString())
 
   return {
     props: {
@@ -64,7 +62,7 @@ export const getStaticProps: GetStaticProps = ({
       tags: postDetails.data.tags,
       banner: postDetails.data.banner,
     },
-  };
-};
+  }
+}
 
-export default BlogDetails;
+export default BlogDetails

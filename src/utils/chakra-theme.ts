@@ -14,13 +14,12 @@ const config: ThemeConfig = {
   useSystemColorMode: true,
 }
 
-
 const fonts = {
   fonts: {
     heading: roboto.style.fontFamily,
     body: roboto.style.fontFamily,
-  }
-};
+  },
+}
 
 const colors = {
   primary: {
@@ -51,8 +50,8 @@ const colors = {
     50: '#fafafa',
   },
   black: {
-    50: '#0D1117'
-  }
+    50: '#0D1117',
+  },
 }
 
 const breakpoints = {

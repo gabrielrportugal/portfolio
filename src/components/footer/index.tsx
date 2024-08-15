@@ -1,12 +1,12 @@
 import { Box } from '@chakra-ui/react'
 
-import { ContactList } from '../contact-list';
+import { ContactList } from '../contact-list'
 
-export const Footer = () => { 
+export const Footer = () => {
   return (
-    <Box 
-      as="footer" 
-      display="flex"  
+    <Box
+      as="footer"
+      display="flex"
       justifyContent="center"
       alignItems="center"
       py={[8, 12, 16]}

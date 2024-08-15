@@ -1,2 +1,2 @@
-export * from './repository';
-export * from './blog';
+export * from './repository'
+export * from './blog'

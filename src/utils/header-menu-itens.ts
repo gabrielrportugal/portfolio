@@ -1,6 +1,6 @@
 interface IHeaderMenuItem {
-  title: string;
-  href: string;
+  title: string
+  href: string
 }
 
 export const headerMenuItens: IHeaderMenuItem[] = [
@@ -15,5 +15,5 @@ export const headerMenuItens: IHeaderMenuItem[] = [
   {
     title: 'Blog',
     href: '/blog',
-  }
+  },
 ]
