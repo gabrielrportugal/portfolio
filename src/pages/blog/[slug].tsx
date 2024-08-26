@@ -22,6 +22,8 @@ function BlogDetails({
   description,
   content,
 }: BlogDetailsProps) {
+  console.log(content)
+
   return (
     <Box>
       <Heading as="h1" mb="2">
@@ -51,6 +53,8 @@ export const getStaticPaths = (): GetStaticPathsResult => {
 export const getStaticProps: GetStaticProps = ({ params }) => {
   const slug = params?.slug ?? ''
   const postDetails = getPostBySlug(slug.toString())
+
+  console.log(postDetails)
 
   return {
     props: {
