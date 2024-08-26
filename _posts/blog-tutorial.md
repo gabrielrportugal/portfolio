@@ -73,4 +73,4 @@ and go to **http://localhost:3000/sample-blog** to see the fruits of your labor!
 
 ### Github Repo
 
-https://github.com/gabrielrportugal/portfolio
+[Repo here](https://github.com/gabrielrportugal/portfolio)
