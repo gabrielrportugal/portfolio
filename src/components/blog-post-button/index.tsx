@@ -18,7 +18,7 @@ export const BlogPostButton = ({ blogDetails }: BlogPostButtonProps) => {
   const { title, description, date, tags } = blogDetails.data
 
   return (
-    <Card as="a" href={blogDetails.slug} _hover={{ opacity: 0.8 }}>
+    <Card as="a" href={`blog/${blogDetails.slug}`} _hover={{ opacity: 0.8 }}>
       <CardHeader>
         <Heading size="md">{title}</Heading>
       </CardHeader>

@@ -1,4 +1,4 @@
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { Box, Stack, useColorModeValue } from '@chakra-ui/react'
 import { Header, Drawer } from '../'
 import { Footer } from '../footer'
 import Head from 'next/head'
@@ -16,13 +16,24 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <title>Gabriel Portugal</title>
       </Head>
       <Header />
-      <Box as="main" paddingTop="8rem" w="100%">
-        <Box maxWidth="7xl" margin={['0 2rem', '0 4rem', '0 6rem', '0 8rem']}>
+      <Stack
+        as="main"
+        paddingTop="8rem"
+        w="100%"
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Stack
+          flexDirection="column"
+          maxWidth="7xl"
+          margin={['0 2rem', '0 4rem', '0 6rem', '0 8rem']}
+        >
           <Drawer />
           {children}
-        </Box>
+        </Stack>
         <Footer />
-      </Box>
+      </Stack>
     </Box>
   )
 }
